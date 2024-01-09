@@ -1,6 +1,6 @@
 async function getBalance(address) {
     try {
-        const response = await fetch(`https://api.etherscan.io/api?module=account&action=balance&address=${address}&tag=latest&apikey=YourApiKeyToken`);
+        const response = await fetch(`https://api.etherscan.io/api');
         const data = await response.json();
         return data.result;
     } catch (error) {
